@@ -1,5 +1,7 @@
 # /usr/share/skilstak
 
+This is a [GitHub repo][] in case you are finding it from the file system.
+
 Everything to setup a single multi-user Ubuntu Linux host (like
 code.skilstak.io). We take a minimal approach to altering what comes
 with the system so that students become familiar with what to expect
@@ -50,3 +52,4 @@ close).
 * (everything listed for [`home-config`][config]
 
 [config]: http://github.com/skilstak/home-config
+[GitHub repo]: http://github.com/skilstak/usr-share-skilstak

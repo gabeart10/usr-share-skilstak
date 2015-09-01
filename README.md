@@ -5,10 +5,13 @@ code.skilstak.io). We take a minimal approach to altering what comes
 with the system so that students become familiar with what to expect
 when working with their own Linux installations. Students can disable
 all of these SkilStak additions by simply removing or changing
-`~/.bash_aliases` and the `~/.vim` sym link. Students wishing the
-most control of their environment can clone, fork, or create their
-own [`home-config`][config] repo (or something like it) when they
-are ready.
+`~/.bash_aliases` and the `~/.vim` and `~/.bash_completion.d` sym
+links. Having these in each student's home directory introduces the
+curious to them as well as the concept of sym linking itself, (which
+is awesome when not abused). Students wishing the most control of
+their environment can clone, fork, or create their own
+[`home-config`][config] repo (or something like it) when they are
+ready.
 
 # Installation
 

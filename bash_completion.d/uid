@@ -1,0 +1,9 @@
+
+_uid() {
+  local users=`cut -d: -f1 /etc/passwd`
+  local typed=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=( $(compgen -W "$users" -- $typed))
+}
+complete -F _uid uid
+
+

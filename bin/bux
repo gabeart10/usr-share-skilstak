@@ -62,5 +62,5 @@ try:
                 log(str(amount))
         show_bux(user,bux)
 except FileNotFoundError as e:
-    print(str(e))
+    print(str(e),file=sys.stderr)
     exit()

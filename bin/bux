@@ -21,9 +21,10 @@ args = parser.parse_args()
 user = args.user
 amount = args.amount
 comment = args.comment
-uid = pwd.getpwnam(user).pw_uid
 
-if not uid > 0:
+try:
+    uid = pwd.getpwnam(user).pw_uid
+except KeyError:
     print("There appears to be no user by that name on this system.")
     exit()
 

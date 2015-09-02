@@ -1,0 +1,3 @@
+#!/bin/sh
+
+view /var/lib/skilstak/$1/buxlog

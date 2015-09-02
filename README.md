@@ -19,6 +19,26 @@ ready.
 
 There are a few ways to use these resources.
 
+## Prerequisites
+
+Setting up a multi-user SkilStak system assumes you have setup the
+following users:
+
+* `admin` account as 1000 (added to `sudo` group)
+* `you` account as 1001
+* `student` account as 1002
+* other actual student accounts on the UID numbers following
+
+***Assume nothing on this server is confidential. Do not place
+anything other than student code that they have backed up to GitHub
+regularly on this system&mdash;especially SkilStak private keys of
+any kind. It is very likely student accounts will be cracked by
+others and public access is provided to `you` and `student` accounts
+to help teach remote terminal login skills. Assume a good hacker
+to gain root access to this system. Nothing of value should ever
+be saved to disk unless encrypted using a private key stored
+elsewhere.***
+
 ## Simple Direct Clone
 
 First obviously you will need a GitHub account. It's probably best
@@ -31,6 +51,8 @@ following should be all you need to get it working:
 cd /usr/share
 git clone git@github.com:skilstak/usr-share-skilstak.git skilstak
 cp -r skilstak/skel/.* /etc/skel
+mkdir /var/lib/skilstak
+chown admin:admin /var/lib/skilstak
 `ln -fs /usr/share/skilstak/motd/motd.sh /etc/profile.d/motd.sh`
 `ln -fs /usr/share/skilstak/motd/motd.txt /etc/motd`
 ```

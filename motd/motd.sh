@@ -1,1 +1,1 @@
-python3 /usr/share/skilstak/motd.py
+python3 /usr/share/skilstak/motd/motd.py

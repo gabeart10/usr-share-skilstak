@@ -7,10 +7,10 @@ import pwd
 euid =  os.geteuid()
 name =  pwd.getpwuid(euid)[4].split(',')[0]
 groups = os.getgroups()
-isuser = os.popen('/usr/local/bin/name ' + name).read() 
-bux = os.popen('/usr/local/bin/skilbux').read() 
+#isuser = os.popen('/usr/local/bin/name ' + name).read() 
+#bux = os.popen('/usr/local/bin/skilbux').read() 
 
-if not isuser: exit()
+#if not isuser: exit()
 
 print(c.yellow + "Welcome back " + name + ". Good to see you." + c.reset)
 #print(c.red + "Fall registration and payment due before August 1st" + c.reset)

@@ -31,6 +31,8 @@ following should be all you need to get it working:
 cd /usr/share
 git clone git@github.com:skilstak/usr-share-skilstak.git skilstak
 cp -r skilstak/skel/.* /etc/skel
+`ln -fs /usr/share/skilstak/motd/motd.sh /etc/profile.d/motd.sh`
+`ln -fs /usr/share/skilstak/motd/motd.txt /etc/motd`
 ```
 
 ## Forked Copy Clone

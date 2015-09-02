@@ -8,7 +8,7 @@ euid =  os.geteuid()
 name =  pwd.getpwuid(euid)[4].split(',')[0]
 groups = os.getgroups()
 #isuser = os.popen('/usr/local/bin/name ' + name).read() 
-#bux = os.popen('/usr/local/bin/skilbux').read() 
+bux = os.popen('/usr/share/skilstak/bin/bux').read() 
 
 #if not isuser: exit()
 

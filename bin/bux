@@ -71,3 +71,7 @@ try:
 except FileNotFoundError as e:
     # print(str(e),file=sys.stderr)
     exit()
+except PermissionError:
+    with open(buxp, "r") as f:
+        bux = f.read()
+        show_bux(user,bux)

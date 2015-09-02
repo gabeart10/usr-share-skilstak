@@ -44,11 +44,14 @@ def log(line):
         print(tstamp + " " + line, file=f)
 
 if not os.path.exists(buxp):
-    os.makedirs(d)
-    with open(buxp,"a") as f:
-        print("0",file=f)
-    with open(logp,"a") as f:
-        print("Log created",file=f)
+    try:
+        os.makedirs(d)
+        with open(buxp,"a") as f:
+            print("0",file=f)
+        with open(logp,"a") as f:
+            print("Log created",file=f)
+    except PermissionError:
+        exit()
 
 try:
     with open(buxp, "r+") as f:

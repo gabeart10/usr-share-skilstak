@@ -54,7 +54,7 @@ if not os.path.exists(buxp):
 
 try:
     with open(buxp, "r+") as f:
-        bux = f.read()
+        bux = f.read().strip()
         if not bux:
             bux = 0
         else:
@@ -73,5 +73,5 @@ except FileNotFoundError as e:
     exit()
 except PermissionError:
     with open(buxp, "r") as f:
-        bux = f.read()
+        bux = f.read().strip()
         show_bux(user,bux)

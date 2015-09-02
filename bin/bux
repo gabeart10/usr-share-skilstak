@@ -48,8 +48,7 @@ if not os.path.exists(buxp):
         os.makedirs(d)
         with open(buxp,"a") as f:
             print("0",file=f)
-        with open(logp,"a") as f:
-            print("Log created",file=f)
+        log("Log created")
     except PermissionError:
         exit()
 

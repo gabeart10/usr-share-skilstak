@@ -49,7 +49,7 @@ close).
 
 # Dependencies
 
-* (everything listed for [`home-config`][config]
+* (everything listed for [`home-config`][config])
 
 [config]: http://github.com/skilstak/home-config
 [GitHub repo]: http://github.com/skilstak/usr-share-skilstak

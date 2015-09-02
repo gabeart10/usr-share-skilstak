@@ -1,0 +1,14 @@
+      This is a [1;37mprivate[0m system. Do not allow others to use your account. 
+          Email [0;33mlearn@skilstak.com[0m for questions or access requests.
+
+           [0;31m        __   .__.__            __          __
+           [0;31m  _____|  | _|__|  |   _______/  |______  |  | __
+           [0;31m /  ___/  |/ /  |  |  /  ___/\   __\__  \ |  |/ /
+           [0;31m \___ \|    <|  |  |__\___ \  |  |  / __ \|    <
+           [0;31m/____  >__|_ \__|____/____  > |__| (____  /__|_ \[1;37m_______[0m
+           [0;31m     \/     \/            \/            \/     \/[1;37m______/[0m
+                                        [1;37mCoding Arts[0m
+
+                 [1;37mh[0m for help if you get stuck, [1;37mw[0m to see who's on
+                               [1;37mtalk <user>[0m to chat
+

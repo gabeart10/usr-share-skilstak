@@ -1,3 +1,9 @@
 #!/bin/sh
 
-view /var/lib/skilstak/$1/buxlog
+if [ -z "$1"]; then
+  user=$USER
+else
+  user=$1
+fi
+
+view /var/lib/skilstak/$user/buxlog

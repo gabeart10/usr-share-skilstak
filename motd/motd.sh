@@ -1,3 +1,1 @@
-unset MAIL
-unset MAILCHECK
-python3 /etc/profile.d/motd.py
+python3 /usr/share/skilstak/motd.py

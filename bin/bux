@@ -43,7 +43,12 @@ def log(line):
         tstamp = str(datetime.datetime.now())
         print(tstamp + " " + line, file=f)
 
-# assume bux paths for all users exist
+if not os.path.exists(buxp):
+    os.makedirs(d)
+    with open(buxp,"a") as f:
+        print("0",file=f)
+    with open(logp,"a") as f:
+        print("Log created",file=f)
 
 try:
     with open(buxp, "r+") as f:

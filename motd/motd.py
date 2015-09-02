@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import solarized.colors as c
+import colors as c
 import os
 import pwd
 

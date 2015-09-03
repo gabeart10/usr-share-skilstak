@@ -36,7 +36,7 @@ bux = 0
 # don't need to check ownership because assuming system setup correctly
 
 def show_bux(user,bux):
-    if pwd.getpwname().pw_uid == uid: 
+    if pwd.getpwnam().pw_uid == uid: 
         begin = "You have "
     else:
         begin = user + " has "

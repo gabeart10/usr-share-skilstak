@@ -8,4 +8,4 @@ gid=$3
 home=$4
 
 su admin -c "mkdir /var/lib/skilstak/$name"
-su "$name" -c "/usr/share/skilstak/bin/bux"
+su admin -c "/usr/share/skilstak/bin/bux $name 10 'Welcome to SkilStak!'"

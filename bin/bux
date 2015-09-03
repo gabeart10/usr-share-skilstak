@@ -36,11 +36,11 @@ bux = 0
 # don't need to check ownership because assuming system setup correctly
 
 def show_bux(user,bux):
-    if pwd.getpwuid(os.getuid()).pw_uid == uid: 
+    if os.getuid() == uid: 
         begin = "You have "
     else:
         begin = user + " has "
-    print(c.yellow + user + " has " + c.cyan +
+    print(c.yellow + begin + c.cyan +
         str(bux) + c.reset + c.yellow + " SkilBux." + c.reset)
 
 def log(line):

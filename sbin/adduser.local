@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# copy or symlink to /usr/local/sbin/adduser.local
+
+name=$1
+uid=$2
+gid=$3
+home=$4
+
+su admin mkdir /var/lib/skilstak/$name
+su admin /var/share/skilstak/bin/bux

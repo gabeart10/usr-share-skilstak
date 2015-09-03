@@ -44,6 +44,8 @@ def log(line):
         tstamp = str(datetime.datetime.now())
         print(tstamp + " " + line, file=f)
 
+# first time
+
 if not os.path.exists(buxp):
     try:
         os.makedirs(d)
@@ -52,6 +54,10 @@ if not os.path.exists(buxp):
         log("Log created")
     except PermissionError:
         exit()
+
+# add on bonus buck for daily login (auto execed from profile.d)
+
+#TODO
 
 try:
     with open(buxp, "r+") as f:

@@ -48,7 +48,8 @@ def log(line):
 
 if not os.path.exists(buxp):
     try:
-        os.makedirs(d)
+        if not os.path.exists(d):
+            os.makedirs(d)
         with open(buxp,"a") as f:
             print("0",file=f)
         log("Log created")

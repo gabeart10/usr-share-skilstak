@@ -7,5 +7,5 @@ uid=$2
 gid=$3
 home=$4
 
-su admin mkdir /var/lib/skilstak/$name
-su admin /var/share/skilstak/bin/bux
+su admin -c "mkdir /var/lib/skilstak/$name"
+su admin -c "/usr/share/skilstak/bin/bux"

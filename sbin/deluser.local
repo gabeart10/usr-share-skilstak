@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# copy or symlink to /usr/local/sbin/deluser.local
+
+name=$1
+uid=$2
+gid=$3
+home=$4
+
+[ -z "$name" ] && exit;
+
+rm -rf /var/lib/skilstak/$name
+rm -rf /home/$name

@@ -6,6 +6,7 @@ _note() {
 }
 complete -F _note note
 alias todo='note todo'
+
 _repo() {
   local list=`repo`
   local typed=${COMP_WORDS[COMP_CWORD]}
@@ -20,8 +21,6 @@ _uid() {
 }
 complete -F _uid uid
 
-
-
 _uidport() {
   local users=`cut -d: -f1 /etc/passwd`
   local typed=${COMP_WORDS[COMP_CWORD]}
@@ -29,10 +28,16 @@ _uidport() {
 }
 complete -F _uidport uidport
 
-
 _ssh() {
   local list=`perl -ne 'print "$1 " if /\s*Host\s+(\S+)/' ~/.ssh/config`
   local typed=${COMP_WORDS[COMP_CWORD]}
   COMPREPLY=( $(compgen -W "$list" -- $typed))
 }
 complete -F _ssh ssh
+
+_laston() {
+  local list=`basename -a \`ls -1d /home/* \``
+  local typed=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=( $(compgen -W "$list" -- $typed))
+}
+complete -F _laston laston

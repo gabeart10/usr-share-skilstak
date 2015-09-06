@@ -109,6 +109,8 @@ alias ip="ifconfig | perl -ne '/^\s*inet (?:addr)?/ and print'"
 
 alias repos='cd "$HOME/repos"'
 alias root='sudo su -'
+alias you='sudo su - you'
+alias skilstak='cd /usr/share/skilstak'
 
 #------------------------------- Web Dev ----------------------------------
 

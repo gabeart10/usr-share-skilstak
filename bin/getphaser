@@ -1,3 +1,4 @@
 #!/bin/sh
 
 wget https://cdnjs.cloudflare.com/ajax/libs/phaser/2.3.0/phaser.js
+wget https://raw.githubusercontent.com/skilstak/course-game-1/gh-pages/shooter/02/game.js

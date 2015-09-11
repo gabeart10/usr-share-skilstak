@@ -1,6 +1,7 @@
 export CONFIG=$HOME/repos/home-config
 export SKILSTAK=/usr/share/skilstak
 export TERM=xterm-256color
+export GOPATH=$HOME/go
 
 if [ ! $TERM = 'screen' ]; then
   # bail if somehow non-interactive
@@ -91,7 +92,6 @@ alias todo='note todo'
 
 export PYTHONDONTWRITEBYTECODE=true
 export PYTHONPATH=$HOME/lib/python:$CONFIG/lib/python:$SKILSTAK/lib/python
-export GOPATH=$HOME/go
 export CLASSPATH=./:$HOME/lib/java:/usr/share/skilstak/lib/java
 
 alias lx='ls -lXB'         #  Sort by extension.

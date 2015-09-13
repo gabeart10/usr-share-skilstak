@@ -88,6 +88,7 @@ alias pytest='nosetests'
 alias pyinstall='sudo pip3 install --upgrade .'
 alias runallpy='for i in *.py;do python3 $i; done'
 alias jsonpp='json_pp'
+alias grep='grep -i'
 alias todo='note todo'
 
 export PYTHONDONTWRITEBYTECODE=true

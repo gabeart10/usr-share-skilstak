@@ -114,6 +114,7 @@ alias you='sudo su - you'
 alias skilstak='cd /usr/share/skilstak'
 alias goi='go install'
 alias gor='go run main.go'
+alias got='go test -v' 
 
 #------------------------------- Web Dev ----------------------------------
 

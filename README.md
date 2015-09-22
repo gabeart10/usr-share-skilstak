@@ -76,6 +76,8 @@ close).
 # Dependencies
 
 * (everything listed for [`home-config`][config])
+* [SkilStak's Go Repo](http://github.com/skilstak/go) at
+  `/usr/share/skilstakgo`
 
 [config]: http://github.com/skilstak/home-config
 [GitHub repo]: http://github.com/skilstak/usr-share-skilstak

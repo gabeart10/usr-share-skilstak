@@ -21,6 +21,16 @@ There are a few ways to use these resources.
 
 ## Prerequisites
 
+### System
+
+While other Linux systems will likely work, the suggested system
+is currently:
+
+**OS**: Ubuntu 14.04 x64, **RAM**: 1GB, **DISK**: 30GB
+
+
+### Users
+
 Setting up a multi-user SkilStak system assumes you have setup the
 following users:
 

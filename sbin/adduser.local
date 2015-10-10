@@ -10,4 +10,4 @@ home=$4
 su admin -c "mkdir /var/lib/skilstak/$name"
 su admin -c "echo 0 >> /var/lib/skilstak/$name/bux"
 su admin -c "touch /var/lib/skilstak/$name/buxlog"
-su admin -c "/usr/share/skilstak/bin/bux $name 10 'Welcome to SkilStak!'"
+su admin -c "/usr/share/skilstak/bin/bux $name 2 'Welcome to SkilStak!'"

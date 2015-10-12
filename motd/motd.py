@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import colors as c
+import skilstak.colors as c
 import os
 import pwd
 

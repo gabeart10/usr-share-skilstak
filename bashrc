@@ -96,6 +96,7 @@ alias todo='note todo'
 export PYTHONDONTWRITEBYTECODE=true
 export PYTHONPATH=$HOME/lib/python:$CONFIG/lib/python:$SKILSTAK/lib/python
 export CLASSPATH=./:$HOME/lib/java:/usr/share/skilstak/lib/java:/usr/share/skilstak/lib/java/*
+export NODE_PATH=/usr/share/skilstak/lib/node_modules
 
 alias lx='ls -lXB'         #  Sort by extension.
 alias lk='ls -lSr'         #  Sort by size, biggest last.

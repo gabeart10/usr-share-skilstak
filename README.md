@@ -63,10 +63,11 @@ git clone git@github.com:skilstak/usr-share-skilstak.git skilstak
 cp -r skilstak/skel/.* /etc/skel
 mkdir /var/lib/skilstak
 chown admin:admin /var/lib/skilstak
-`ln -fs /usr/share/skilstak/motd/motd.sh /etc/profile.d/motd.sh`
-`ln -fs /usr/share/skilstak/motd/motd.txt /etc/motd`
-`ln -fs /usr/share/skilstak/sbin/adduser.local /usr/local/sbin/adduser.local`
-`ln -fs /usr/share/skilstak/sbin/deluser.local /usr/local/sbin/deluser.local`
+ln -fs /usr/share/skilstak/motd/motd.sh /etc/profile.d/motd.sh
+ln -fs /usr/share/skilstak/motd/motd.txt /etc/motd
+ln -fs /usr/share/skilstak/sbin/adduser.local /usr/local/sbin/adduser.local
+ln -fs /usr/share/skilstak/sbin/deluser.local /usr/local/sbin/deluser.local
+ln -fs /usr/share/skilstak/lib/node /usr/local/lib/node
 ```
 
 ## Forked Copy Clone

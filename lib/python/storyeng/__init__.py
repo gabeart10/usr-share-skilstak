@@ -32,7 +32,7 @@ import time
 import importlib
 import pkgutil
 import json
-import colors as c
+import skilstak.colors as c
 
 class Story():
     what_phrases = [

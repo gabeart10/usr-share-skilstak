@@ -33,8 +33,21 @@ def check(pin, in_or_out):
         ERROR
         Pin ''' + str(pin) + ' was not made a ' + in_or_out + ".")
 
-def make_board
+def output(pin, on_off):
+    check(pin, 'out')
+    if on_off == 'on' or on_off == 'off' or on_off == 1 or on_off == 0:
+        pins_info[str(pin) + '_on_off'] = on_off
+    else:
+        print('''
+        ERROR
+        Not vaild On Off agument try: 'on', 'off', 1, 0
+        ''')
+        exit()
+
+
 if __name__ in '__main__':
-    setup(12,'in')
-    print(pins_info)
+    setup(12,'out')
     check(12,'out')
+    output(12,'on')
+    print(pins_info)
+

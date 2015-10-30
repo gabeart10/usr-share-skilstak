@@ -1,9 +1,6 @@
 """This is an emulator for the gpio pins in rasp-pi that uses ascii art!"""
-
-pins_set = []
-pins_plugedin = []
 pins_info = {}
-
+ppin_info = {'ppin_status12': 1}
 
 def setup(pin, in_or_out):
     if 'out' in in_or_out or 'in' in in_or_out:
@@ -44,10 +41,20 @@ def output(pin, on_off):
         ''')
         exit()
 
+def input(pin):
+    check(pin, 'in')
+    if ppin_info['ppin_status' + str(pin)] == 1:
+        return True
+    else:
+        return False
 
 if __name__ in '__main__':
-    setup(12,'out')
-    check(12,'out')
-    output(12,'on')
+    setup(12,'in')
+    check(12,'in')
+    #output(12,'on')
+    if input(12):
+        print("On")
+    else:
+        print("off")
     print(pins_info)
 
